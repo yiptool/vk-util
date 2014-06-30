@@ -23,6 +23,10 @@
 #import <UIKit/UIKit.h>
 #import <yip-imports/vk-ios/VKSdk.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 extern NSString * const NZVKontakteReceivedToken;
 extern NSString * const NZVKontakteAccessDenied;
 extern NSString * const NZVKontakteTokenExpired;
@@ -32,3 +36,7 @@ extern NSString * const NZVKontakteTokenExpired;
 -(id)init;
 +(NZVKAuthDelegate *)sharedInstance;
 @end
+
+#ifdef __cplusplus
+}
+#endif
